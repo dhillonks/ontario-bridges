@@ -1,0 +1,28 @@
+:host{
+  height: 100%;
+}
+
+#app{
+  display: flex;
+  flex-direction: row;
+
+  height: 100%;
+  overflow: hidden;
+}
+
+#menu{
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+#panel{
+  height: 100%;
+  flex: 4;
+}
+
+@media screen and (max-width: 400px) {
+  #app {
+    flex-direction: column;
+  }
+}

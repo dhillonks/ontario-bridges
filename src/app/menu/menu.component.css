@@ -1,0 +1,21 @@
+nav{
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0.3em;
+  list-style: none;
+
+  cursor: pointer;
+  border-left: 4px solid transparent;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+li{
+  margin: 0;
+}

@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <li *ngFor="let bridge of bridges; trackBy: trackByBridges"
+        title="{{bridge.name | titlecase}}"
+        (click)="handleClick(bridge)">
+      {{bridge.name | titlecase}}
+    </li>
+  </ul>
+</nav>
