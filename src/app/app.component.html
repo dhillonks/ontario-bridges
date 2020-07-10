@@ -1,4 +1,8 @@
 <div id="app">
-  <app-menu id="menu"></app-menu>
-  <app-bridge-panel id="panel"></app-bridge-panel>
+  <app-menu id="menu"
+    (bridgeSelected)="handleBridgeChange($event)"
+  ></app-menu>
+  <app-bridge-panel id="panel"
+    [bridge]="currentBridge"
+  ></app-bridge-panel>
 </div>

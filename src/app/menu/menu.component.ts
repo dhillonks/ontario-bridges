@@ -1,7 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Bridge } from '../bridge';
 import { Bridges } from '../bridges';
-import { EmitterVisitorContext } from '@angular/compiler';
 
 @Component({
   selector: 'app-menu',
@@ -14,7 +13,7 @@ export class MenuComponent implements OnInit {
 
   @Output() bridgeSelected: EventEmitter<Bridge> = new EventEmitter();
 
-  handleClick(bridge: Bridge){
+  handleClick(bridge: Bridge): void{
     //Emits a bridge:
     this.bridgeSelected.emit(bridge);
   }

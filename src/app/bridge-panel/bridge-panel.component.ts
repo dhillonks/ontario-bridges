@@ -8,7 +8,7 @@ import { Bridge } from '../bridge';
 })
 export class BridgePanelComponent implements OnInit {
 
-  @Input() currentBridge: Bridge;
+  @Input() bridge: Bridge;
 
   constructor() { }
 
